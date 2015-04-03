@@ -57,3 +57,15 @@ TW_NO_USB_STORAGE := true
 TW_INCLUDE_JB_CRYPTO := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/samsung/chagallwifi/mr_init_devices.c
+MR_RD_ADDR := 0x2600000
+MR_DPI := xhdpi
+# MR_DPI_MUL := 1
+MR_FSTAB := device/samsung/chagallwifi/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x24000000
+MR_KEXEC_DTB := true
+MR_USE_MROM_FSTAB := true
+MR_DPI_FONT := 250
